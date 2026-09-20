@@ -104,7 +104,7 @@ module.exports = grammar({
       'grab', optional(seq('(', $.identifier, ')')), $.block,
     ),
 
-    return_statement: $ => seq('give', optional($.expression)),
+    return_statement: $ => prec.right(seq('give', optional($.expression))),
     skip_statement: $ => 'skip',
     getout_statement: $ => 'getout',
 

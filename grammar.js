@@ -40,7 +40,7 @@ module.exports = grammar({
       $.skip_statement,
       $.getout_statement,
       $.bring_statement,
-      $._expression_statement,
+      $.expression_statement,
     ),
 
     group_declaration: $ => seq(

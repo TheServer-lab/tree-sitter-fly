@@ -4,7 +4,7 @@
   "if" "orif" "else" "ifnot"
   "while" "for" "in"
   "wait" "do" "grab"
-  "give" "skip" "getout"
+  "give"
   "bring" "as"
   "and" "or" "not"
 ] @keyword

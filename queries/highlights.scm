@@ -28,6 +28,10 @@
 (line_comment) @comment
 (block_comment) @comment
 
+; Statement keywords
+(skip_statement) @keyword
+(getout_statement) @keyword
+
 ; Operators
 [
   "=" "==" "!=" "<" "<=" ">" ">="

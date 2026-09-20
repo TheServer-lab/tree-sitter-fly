@@ -1,0 +1,77 @@
+==================
+Control flow
+==================
+
+if score >= 10 {
+  show("high")
+}
+orif score == 5 {
+  show("middle")
+}
+ifnot {
+  show("low")
+}
+
+while ready {
+  wait .5
+}
+
+do {
+  value = num("42")
+}
+grab (err) {
+  show("bad")
+}
+
+---
+
+(source_file
+  (if_statement
+    (binary_expression
+      (identifier)
+      (number))
+    (block
+      (expression_statement
+        (call_expression
+          function: (identifier)
+          (argument_list
+            (string))))
+    (orif_clause
+      (binary_expression
+        (identifier)
+        (number))
+      (block
+        (expression_statement
+          (call_expression
+            function: (identifier)
+            (argument_list
+              (string)))))
+    (else_clause
+      (block
+        (expression_statement
+          (call_expression
+            function: (identifier)
+            (argument_list
+              (string))))))
+  (while_statement
+    (identifier)
+    (block
+      (wait_statement
+        duration: (number))))
+  (do_statement
+    (block
+      (expression_statement
+        (assignment_expression
+          left: (identifier)
+          right: (call_expression
+            function: (identifier)
+            (argument_list
+              (string))))))
+    (grab_clause
+      (identifier)
+      (block
+        (expression_statement
+          (call_expression
+            function: (identifier)
+            (argument_list
+              (string)))))))

@@ -1,0 +1,27 @@
+{
+  "grammars": [
+    {
+      "name": "fly",
+      "camelcase": "Fly",
+      "scope": "source.fly",
+      "path": ".",
+      "file-types": ["fly"],
+      "highlights": ["queries/highlights.scm"],
+      "injection-regex": "^(fly)$"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Tree-sitter grammar for the Fly programming language",
+    "authors": [{"name": "TheServer-lab"}],
+    "links": {"repository": "https://github.com/TheServer-lab/tree-sitter-fly"}
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true
+  }
+}

@@ -35,7 +35,7 @@ grab (err) {
         (call_expression
           function: (identifier)
           (argument_list
-            (string))))
+            (string)))))
     (orif_clause
       (binary_expression
         (identifier)
@@ -45,14 +45,14 @@ grab (err) {
           (call_expression
             function: (identifier)
             (argument_list
-              (string)))))
-    (else_clause
-      (block
-        (expression_statement
-          (call_expression
-            function: (identifier)
-            (argument_list
-              (string))))))
+              (string)))))))
+  (ifnot_statement
+    (block
+      (expression_statement
+        (call_expression
+          function: (identifier)
+          (argument_list
+            (string))))))
   (while_statement
     (identifier)
     (block
@@ -74,4 +74,4 @@ grab (err) {
           (call_expression
             function: (identifier)
             (argument_list
-              (string)))))))
+              (string))))))))

@@ -35,10 +35,12 @@ a = 10 + 5 * 2
       left: (identifier)
       right: (board
         (board_entry
-          (string)
+          (board_key
+            (string))
           (string))
         (board_entry
-          (string)
+          (board_key
+            (string))
           (number)))))
   (expression_statement
     (member_expression
@@ -51,4 +53,4 @@ a = 10 + 5 * 2
         (number)
         (binary_expression
           (number)
-          (number)))))
+          (number))))))

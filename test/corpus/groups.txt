@@ -24,31 +24,31 @@ member.introduce()
 (source_file
   (group_declaration
     name: (identifier)
-    (group_body
+    body: (group_body
       (field_declaration
         name: (identifier))
       (job_declaration
         name: (identifier)
-        (block
+        body: (block
           (expression_statement
             (call_expression
               function: (identifier)
               (argument_list
-                (string)))))))
+                (string))))))))
   (group_declaration
     name: (identifier)
     parent: (identifier)
-    (group_body
+    body: (group_body
       (field_declaration
         name: (identifier))
       (job_declaration
         name: (identifier)
-        (block
+        body: (block
           (expression_statement
             (call_expression
               function: (identifier)
               (argument_list
-                (string)))))))
+                (string))))))))
   (expression_statement
     (assignment_expression
       left: (identifier)

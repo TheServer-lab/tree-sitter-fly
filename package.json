@@ -1,0 +1,14 @@
+{
+  "name": "tree-sitter-fly",
+  "version": "0.1.0",
+  "description": "Tree-sitter grammar for the Fly programming language",
+  "license": "MIT",
+  "repository": {"type": "git", "url": "https://github.com/TheServer-lab/tree-sitter-fly.git"},
+  "keywords": ["tree-sitter", "fly", "parser", "grammar"],
+  "scripts": {
+    "generate": "tree-sitter generate",
+    "test": "tree-sitter test",
+    "parse": "tree-sitter parse"
+  },
+  "devDependencies": {"tree-sitter-cli": "^0.25.0"}
+}
